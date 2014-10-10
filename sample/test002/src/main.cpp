@@ -25,20 +25,10 @@ int main(int argc, char *argv[]){
             sleep(20);
             std::cout << "go..." << std::endl;
 
-            allocate(1024*1024*32);
+            allocate(1024*1024*128);
+            sleep(3);
             release();
-            
-            for(int i=0; i<3; i++){
-                allocate(1024*1024*4);
-                sleep(3);
-                allocate(1024*1024*4);
-                sleep(3);
-                release();
-                sleep(3);
-                release();
-                sleep(3);
-            }
-            
+            sleep(3);
 
             for(int i=0; i<10; i++){
                 allocate(1024*1024*4);

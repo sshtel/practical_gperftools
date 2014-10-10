@@ -15,11 +15,12 @@ BIN_DIR = ./bin
 TEST001_DIR = $(SRC_DIR)/test001
 TEST001_OUTPUT = $(BIN_DIR)/test001
 TEST001_OBJ += $(TEST001_DIR)/main.cpp
-TEST001_OBJ += $(TEST001_DIR)/test1.cpp
+TEST001_OBJ += $(TEST001_DIR)/allocate_release.cpp
 
 TEST002_DIR = $(SRC_DIR)/test002
 TEST002_OUTPUT = $(BIN_DIR)/test002
 TEST002_OBJ += $(TEST002_DIR)/main.cpp
+TEST002_OBJ += $(TEST002_DIR)/allocate_release.cpp
 
 
 
@@ -48,15 +49,16 @@ CFLAGS += -pthread
 
 #CFLAGS += -fno-builtin-malloc -fno-builtin-calloc -fno-builtin-realloc -fno-builtin-free 
 
+all: test001 test002
 
 test001:
+	@echo build test001
 	$(CXX) $(CFLAGS) $(LFLAGS) $(TEST001_OBJ) $(GPERF_STATIC_LIB) $(DEFINES) -o $(TEST001_OUTPUT)
 
 test002:
+	@echo build test002
 	$(CXX) $(CFLAGS) $(LFLAGS) $(TEST002_OBJ) $(GPERF_STATIC_LIB) $(DEFINES) -o $(TEST002_OUTPUT)
 
-
-all: test001 test002
 
 
 clean:

@@ -8,7 +8,7 @@
 #include <google/heap-checker.h>
 #endif
 
-#include "test1.h"
+#include "allocate_release.h"
 
 void leak(){
     int *a = new int[100];

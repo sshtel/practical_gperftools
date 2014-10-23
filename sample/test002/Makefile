@@ -29,6 +29,7 @@ GPERF_STATIC_LIB = $(GPERF_DIR)/target/lib/libtcmalloc_and_profiler.a
 else
 GPERF_STATIC_LIB = $(GPERF_DIR)/target/lib/libtcmalloc.a
 endif
+CFLAGS += -fno-builtin-malloc -fno-builtin-calloc -fno-builtin-realloc -fno-builtin-free 
 
 else  ####NO GPERFTOOLS
 GPERF_DIR = 
@@ -40,7 +41,6 @@ CFLAGS += -pthread
 #LFLAGS += -lrt
 
 
-#CFLAGS += -fno-builtin-malloc -fno-builtin-calloc -fno-builtin-realloc -fno-builtin-free 
 
 all:
 	$(CXX) $(CFLAGS) $(LFLAGS) $(OBJS) $(GPERF_STATIC_LIB) $(DEFINES) -o $(OUTPUT)

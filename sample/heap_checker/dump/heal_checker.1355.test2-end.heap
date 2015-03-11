@@ -1,0 +1,41 @@
+heap profile:      1:  4194304 [     1:  4194304] @ heapprofile
+     1:  4194304 [     1:  4194304] @ 0x00405d93 0x00404df6 0x7f59f6b1676d
+
+MAPPED_LIBRARIES:
+00400000-00433000 r-xp 00000000 00:00 7887507     /home/sshtel/workspace/practical_gperftools/sample/heap_checker/bin/heal_checker
+00632000-00633000 r--p 00032000 00:00 7887507     /home/sshtel/workspace/practical_gperftools/sample/heap_checker/bin/heal_checker
+00633000-00634000 rw-p 00033000 00:00 7887507     /home/sshtel/workspace/practical_gperftools/sample/heap_checker/bin/heal_checker
+00634000-0065b000 rw-p 00000000 00:00 0           
+024b5000-031b6000 rw-p 00000000 00:00 0           [heap]
+7f59f6a95000-7f59f6af5000 rw-p 00000000 00:00 0           
+7f59f6af5000-7f59f6caa000 r-xp 00000000 00:00 5379297     /lib/x86_64-linux-gnu/libc-2.15.so
+7f59f6caa000-7f59f6eaa000 ---p 001b5000 00:00 5379297     /lib/x86_64-linux-gnu/libc-2.15.so
+7f59f6eaa000-7f59f6eae000 r--p 001b5000 00:00 5379297     /lib/x86_64-linux-gnu/libc-2.15.so
+7f59f6eae000-7f59f6eb0000 rw-p 001b9000 00:00 5379297     /lib/x86_64-linux-gnu/libc-2.15.so
+7f59f6eb0000-7f59f6eb5000 rw-p 00000000 00:00 0           
+7f59f6eb5000-7f59f6ecd000 r-xp 00000000 00:00 5379306     /lib/x86_64-linux-gnu/libpthread-2.15.so
+7f59f6ecd000-7f59f70cc000 ---p 00018000 00:00 5379306     /lib/x86_64-linux-gnu/libpthread-2.15.so
+7f59f70cc000-7f59f70cd000 r--p 00017000 00:00 5379306     /lib/x86_64-linux-gnu/libpthread-2.15.so
+7f59f70cd000-7f59f70ce000 rw-p 00018000 00:00 5379306     /lib/x86_64-linux-gnu/libpthread-2.15.so
+7f59f70ce000-7f59f70d2000 rw-p 00000000 00:00 0           
+7f59f70d2000-7f59f70e7000 r-xp 00000000 00:00 5377591     /lib/x86_64-linux-gnu/libgcc_s.so.1
+7f59f70e7000-7f59f72e6000 ---p 00015000 00:00 5377591     /lib/x86_64-linux-gnu/libgcc_s.so.1
+7f59f72e6000-7f59f72e7000 r--p 00014000 00:00 5377591     /lib/x86_64-linux-gnu/libgcc_s.so.1
+7f59f72e7000-7f59f72e8000 rw-p 00015000 00:00 5377591     /lib/x86_64-linux-gnu/libgcc_s.so.1
+7f59f72e8000-7f59f73e3000 r-xp 00000000 00:00 5379308     /lib/x86_64-linux-gnu/libm-2.15.so
+7f59f73e3000-7f59f75e2000 ---p 000fb000 00:00 5379308     /lib/x86_64-linux-gnu/libm-2.15.so
+7f59f75e2000-7f59f75e3000 r--p 000fa000 00:00 5379308     /lib/x86_64-linux-gnu/libm-2.15.so
+7f59f75e3000-7f59f75e4000 rw-p 000fb000 00:00 5379308     /lib/x86_64-linux-gnu/libm-2.15.so
+7f59f75e4000-7f59f76c6000 r-xp 00000000 00:00 6430220     /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.16
+7f59f76c6000-7f59f78c5000 ---p 000e2000 00:00 6430220     /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.16
+7f59f78c5000-7f59f78cd000 r--p 000e1000 00:00 6430220     /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.16
+7f59f78cd000-7f59f78cf000 rw-p 000e9000 00:00 6430220     /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.16
+7f59f78cf000-7f59f78e4000 rw-p 00000000 00:00 0           
+7f59f78e4000-7f59f7906000 r-xp 00000000 00:00 5379309     /lib/x86_64-linux-gnu/ld-2.15.so
+7f59f7923000-7f59f7aea000 rw-p 00000000 00:00 0           
+7f59f7af4000-7f59f7b06000 rw-p 00000000 00:00 0           
+7f59f7b06000-7f59f7b07000 r--p 00022000 00:00 5379309     /lib/x86_64-linux-gnu/ld-2.15.so
+7f59f7b07000-7f59f7b09000 rw-p 00023000 00:00 5379309     /lib/x86_64-linux-gnu/ld-2.15.so
+7ffffc0aa000-7ffffc0cb000 rw-p 00000000 00:00 0           [stack]
+7ffffc0f1000-7ffffc0f2000 r-xp 00000000 00:00 0           [vdso]
+ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0           [vsyscall]

@@ -13,7 +13,7 @@ CXX=g++
 SRC_DIR = ./src
 BIN_DIR = ./bin
 
-OUTPUT = $(BIN_DIR)/heal_checker
+OUTPUT = $(BIN_DIR)/heap_checker
 OBJS += $(SRC_DIR)/main.cpp
 OBJS += $(SRC_DIR)/allocate_release.cpp
 
